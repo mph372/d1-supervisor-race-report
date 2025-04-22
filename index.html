@@ -42,84 +42,84 @@
             <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Voter Registration Data</h2>
                 
-                <p class="mb-4">The following table shows the voter registration breakdown in San Diego County Supervisors District 1:</p>
-                
-                <div class="overflow-x-auto mb-6">
+                <div class="mb-4">
+                    <!-- Registration Bars -->
+                    <div class="text-sm text-gray-600 mb-1">Registration Breakdown</div>
+                    <div class="w-full bg-gray-200 rounded overflow-hidden mb-4 flex h-6">
+                      <div class="flex items-center justify-center text-[10px] text-white" style="width:45.15%; background-color:#2563EB;">45.2%</div>
+                      <div class="flex items-center justify-center text-[10px] text-white" style="width:22.07%; background-color:#DC2626;">22.1%</div>
+                      <div class="flex items-center justify-center text-[10px] text-white" style="width:32.78%; background-color:#6B7280;">32.8%</div>
+                    </div>
+                  
+                    <!-- Turnout Bars -->
+                    <div class="text-sm text-gray-600 mb-1">Turnout Breakdown</div>
+                    <div class="w-full bg-gray-200 rounded overflow-hidden flex h-6">
+                      <div class="flex items-center justify-center text-[10px] text-white" style="width:48.1%; background-color:#2563EB;">48.1%</div>
+                      <div class="flex items-center justify-center text-[10px] text-white" style="width:32.1%; background-color:#DC2626;">32.1%</div>
+                      <div class="flex items-center justify-center text-[10px] text-white" style="width:19.8%; background-color:#6B7280;">19.8%</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Contextual explanation -->
+                  <p class="mt-4">
+                    Democrats are the largest registrant group (<strong>45.2 %</strong> of all voters), followed by unaffiliated/third‑party voters (<strong>32.8 %</strong>) and Republicans (<strong>22.1 %</strong>).
+                  </p>
+                  <p class="mb-6">
+                    In actual turnout, Democrats still led (<strong>48.1 %</strong> of ballots cast) while Republicans punched above their registration share (<strong>32.1 %</strong>). Voters outside the two major parties turned out at a much lower rate (<strong>19.8 %</strong> vs 32.8 % registered).
+                  </p>
+                  
+                  <!-- Data table -->
+                  <div class="overflow-x-auto">
                     <table class="min-w-full bg-white border border-gray-300">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Party Affiliation</th>
-                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Number of Registered Voters</th>
-                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Percentage</th>
-                            </tr>
-                        </thead>
-                        <tbody class="odd:bg-gray-50 even:bg-white">
-                            <tr class="hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Democratic</td>
-                                <td class="py-2 px-4 border-b text-right">168,590</td>
-                                <td class="py-2 px-4 border-b text-right">45.15%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Republican</td>
-                                <td class="py-2 px-4 border-b text-right">82,430</td>
-                                <td class="py-2 px-4 border-b text-right">22.07%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Other</td>
-                                <td class="py-2 px-4 border-b text-right">122,391</td>
-                                <td class="py-2 px-4 border-b text-right">32.78%</td>
-                            </tr>
-                            <tr class="font-bold bg-gray-50 hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Total</td>
-                                <td class="py-2 px-4 border-b text-right">373,409</td>
-                                <td class="py-2 px-4 border-b text-right">100%</td>
-                            </tr>
-                        </tbody>
+                      <thead class="bg-gray-100">
+                        <tr>
+                          <th class="py-2 px-4 border-b text-left">Party</th>
+                          <th class="py-2 px-4 border-b text-right">Registered</th>
+                          <th class="py-2 px-4 border-b text-right">Registration %</th>
+                          <th class="py-2 px-4 border-b text-right">Turnout %</th>
+                          <th class="py-2 px-4 border-b text-right">Turnout vs Reg</th>
+                        </tr>
+                      </thead>
+                      <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr>
+                          <td class="py-2 px-4 border-b">Democratic</td>
+                          <td class="py-2 px-4 border-b text-right">168,590</td>
+                          <td class="py-2 px-4 border-b text-right">45.2%</td>
+                          <td class="py-2 px-4 border-b text-right">48.1%</td>
+                          <td class="py-2 px-4 border-b text-right text-green-600">+2.9%</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border-b">Republican</td>
+                          <td class="py-2 px-4 border-b text-right">82,430</td>
+                          <td class="py-2 px-4 border-b text-right">22.1%</td>
+                          <td class="py-2 px-4 border-b text-right">32.1%</td>
+                          <td class="py-2 px-4 border-b text-right text-green-600">+10.0%</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border-b">Other</td>
+                          <td class="py-2 px-4 border-b text-right">122,391</td>
+                          <td class="py-2 px-4 border-b text-right">32.8%</td>
+                          <td class="py-2 px-4 border-b text-right">19.8%</td>
+                          <td class="py-2 px-4 border-b text-right text-red-600">–13.0%</td>
+                        </tr>
+                        <tr class="font-bold bg-gray-50">
+                          <td class="py-2 px-4 border-b">Total</td>
+                          <td class="py-2 px-4 border-b text-right">373,409</td>
+                          <td class="py-2 px-4 border-b text-right">100%</td>
+                          <td class="py-2 px-4 border-b text-right">100%</td>
+                          <td class="py-2 px-4 border-b text-right">–</td>
+                        </tr>
+                      </tbody>
                     </table>
-                </div>
-                
-                <p>Democrats represent the largest registered voting bloc in District 1, accounting for nearly half of all registered voters at 45.15%. Republican registrants make up just over one-fifth of voters at 22.07%, while those registered as "Other" (including independents and third parties) comprise nearly one-third of the electorate at 32.78%.</p>
-                <p class="text-sm text-gray-500 mt-2">Source: Political Data Inc.</p>
+                  </div>
+                  
+                  <p class="text-sm text-gray-500 mt-4">
+                    Registration source: Political Data Inc. • Turnout source: San Diego County Registrar of Voters
+                  </p>
             </section>
 
             <!-- Voter Turnout Section -->
-            <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
-                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Voter Turnout by Party Registration</h2>
-                
-                <p class="mb-4">While Democrats make up the largest share of registered voters in the district, the actual turnout in this special election primary showed somewhat different participation rates among party registrants. The data was obtained from the San Diego County Registrar of Voters.</p>
-                
-                <div class="overflow-x-auto mb-6">
-                    <table class="min-w-full bg-white border border-gray-300">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Party Registration</th>
-                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Percentage of Votes Cast</th>
-                            </tr>
-                        </thead>
-                        <tbody class="odd:bg-gray-50 even:bg-white">
-                            <tr class="hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Democratic</td>
-                                <td class="py-2 px-4 border-b text-right">48.1%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Republican</td>
-                                <td class="py-2 px-4 border-b text-right">32.1%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Other</td>
-                                <td class="py-2 px-4 border-b text-right">19.8%</td>
-                            </tr>
-                            <tr class="font-bold bg-gray-50 hover:bg-gray-100">
-                                <td class="py-2 px-4 border-b">Total</td>
-                                <td class="py-2 px-4 border-b text-right">100%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <p>The turnout data shows that Democratic voters represented a slightly larger share of the actual voters (48.1%) than their registration numbers would suggest (45.15%). Similarly, Republican voters turned out at a higher proportion (32.1%) than their registration percentage (22.07%). Conversely, voters registered as "Other" participated at a significantly lower rate (19.8%) than their registration numbers (32.78%) would predict.</p>
-                <p class="text-sm text-gray-500 mt-2">Source: San Diego County Registrar of Voters</p>
-            </section>
+            
 
             <!-- Candidate Results Section -->
             <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
@@ -443,14 +443,6 @@
             </tbody>
         </table>
     </div>
-    
-    <h3 class="text-xl font-bold mb-3 text-gray-800">Neighborhood Performance Analysis</h3>
-    
-    <p class="mb-4">This table shows significant geographic variation in candidate support across District 1. John McCann performed strongest in Sweetwater (59.11%), Bonita (56.34%), and Chula Vista (49.51%), while performing weakest in SE San Diego W (14.81%), Golden Hill (13.70%), and South Park (16.65%).</p>
-    
-    <p class="mb-4">Paloma Aguirre saw her strongest support in South Park (58.75%), Balboa Park (57.01%), and Imperial Beach (48.08%). Vivian Moreno performed best in SE San Diego W (48.68%), Otay (31.30%), and San Ysidro (30.03%).</p>
-    
-    <p>The data reveals clear geographic patterns that shaped the election results, with candidates showing particular strength in specific communities across the district.</p>
 
     <!-- JavaScript for Sorting -->
     <script>
@@ -1089,6 +1081,328 @@
     <p class="mb-4">John McCann's support funding of $385,358.93 came from a mix of business interests, the National Association of REALTORS, and public safety unions. Carolina Chavez received $109,066.28 in support funding, all from a single independent expenditure committee. Lincoln Pickard received $21,482.06 from a labor coalition sponsored by LIUNA Local 89.</p>
     
     <p>The data reveals different patterns of support for each candidate, with Democratic candidates receiving most of their support from labor unions, while Republican candidate John McCann received support mainly from business groups and public safety unions. Interestingly, Republican candidate Lincoln Pickard received his support from a labor organization.</p>
+</section>
+
+<!-- Spending Over Time Section -->
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Spending Over Time in Support of Candidates</h2>
+    
+    <p class="mb-4">The following chart shows the cumulative independent expenditure spending in support of each candidate over the course of the election campaign. This visualization helps to identify key periods of spending activity and compare the relative financial support each candidate received throughout the race.</p>
+    
+    <div class="mb-6">
+        <div class="bg-gray-50 p-2 border border-gray-200 rounded-md">
+            <div style="height: 500px;">
+                <canvas id="spendingTimeChart"></canvas>
+            </div>
+        </div>
+        <p class="text-sm text-gray-500 mt-2 text-center">Data source: Campaign finance disclosures filed with the San Diego County Registrar of Voters</p>
+    </div>
+    
+    <!-- Chart.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Required for time scale -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-adapter-moment/1.0.1/chartjs-adapter-moment.min.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Chart data
+        const datasets = [
+            {
+                label: "John McCann",
+                data: [
+                    {x: "2025-02-12", y: 75000},
+                    {x: "2025-02-17", y: 75000},
+                    {x: "2025-03-01", y: 85000},
+                    {x: "2025-03-03", y: 85000},
+                    {x: "2025-03-04", y: 85000},
+                    {x: "2025-03-05", y: 85000},
+                    {x: "2025-03-06", y: 85000},
+                    {x: "2025-03-07", y: 85000},
+                    {x: "2025-03-08", y: 98050},
+                    {x: "2025-03-10", y: 147970},
+                    {x: "2025-03-11", y: 163473.41},
+                    {x: "2025-03-12", y: 163473.41},
+                    {x: "2025-03-13", y: 279606.3},
+                    {x: "2025-03-14", y: 338979.93},
+                    {x: "2025-03-15", y: 338979.93},
+                    {x: "2025-03-16", y: 340379.93},
+                    {x: "2025-03-17", y: 340379.93},
+                    {x: "2025-03-18", y: 340379.93},
+                    {x: "2025-03-19", y: 340379.93},
+                    {x: "2025-03-20", y: 347879.93},
+                    {x: "2025-03-21", y: 347879.93},
+                    {x: "2025-03-22", y: 347879.93},
+                    {x: "2025-03-24", y: 367879.93},
+                    {x: "2025-03-25", y: 367879.93},
+                    {x: "2025-03-26", y: 375379.93},
+                    {x: "2025-03-27", y: 375379.93},
+                    {x: "2025-03-28", y: 385358.93},
+                    {x: "2025-03-29", y: 391845.93},
+                    {x: "2025-03-31", y: 391845.93},
+                    {x: "2025-04-01", y: 393245.93},
+                    {x: "2025-04-02", y: 405745.93},
+                    {x: "2025-04-03", y: 405745.93},
+                    {x: "2025-04-04", y: 405745.93},
+                    {x: "2025-04-05", y: 405745.93},
+                    {x: "2025-04-06", y: 405745.93},
+                    {x: "2025-04-07", y: 409358.53},
+                    {x: "2025-04-08", y: 457060.11}
+                ],
+                borderColor: "#4e79a7",
+                backgroundColor: "#4e79a720",
+                borderWidth: 2,
+                fill: false
+            },
+            {
+                label: "Carolina Chavez",
+                data: [
+                    {x: "2025-02-12", y: 0},
+                    {x: "2025-02-17", y: 18429.06},
+                    {x: "2025-03-01", y: 18429.06},
+                    {x: "2025-03-03", y: 18429.06},
+                    {x: "2025-03-04", y: 18429.06},
+                    {x: "2025-03-05", y: 18429.06},
+                    {x: "2025-03-06", y: 36858.06},
+                    {x: "2025-03-07", y: 36858.06},
+                    {x: "2025-03-08", y: 36858.06},
+                    {x: "2025-03-10", y: 36858.06},
+                    {x: "2025-03-11", y: 36858.06},
+                    {x: "2025-03-12", y: 38858.06},
+                    {x: "2025-03-13", y: 38858.06},
+                    {x: "2025-03-14", y: 38858.06},
+                    {x: "2025-03-15", y: 38858.06},
+                    {x: "2025-03-16", y: 58460.87},
+                    {x: "2025-03-17", y: 58460.87},
+                    {x: "2025-03-18", y: 58460.87},
+                    {x: "2025-03-19", y: 58460.87},
+                    {x: "2025-03-20", y: 58460.87},
+                    {x: "2025-03-21", y: 76758.27},
+                    {x: "2025-03-22", y: 76758.27},
+                    {x: "2025-03-24", y: 109066.28},
+                    {x: "2025-03-25", y: 109066.28},
+                    {x: "2025-03-26", y: 109066.28},
+                    {x: "2025-03-27", y: 109066.28},
+                    {x: "2025-03-28", y: 109066.28},
+                    {x: "2025-03-29", y: 109066.28},
+                    {x: "2025-03-31", y: 109066.28},
+                    {x: "2025-04-01", y: 109066.28},
+                    {x: "2025-04-02", y: 109066.28},
+                    {x: "2025-04-03", y: 159282.53},
+                    {x: "2025-04-04", y: 159282.53},
+                    {x: "2025-04-05", y: 165282.53},
+                    {x: "2025-04-06", y: 165282.53},
+                    {x: "2025-04-07", y: 165282.53},
+                    {x: "2025-04-08", y: 165282.53}
+                ],
+                borderColor: "#f28e2c",
+                backgroundColor: "#f28e2c20",
+                borderWidth: 2,
+                fill: false
+            },
+            {
+                label: "Paloma Aguirre",
+                data: [
+                    {x: "2025-02-12", y: 0},
+                    {x: "2025-02-17", y: 0},
+                    {x: "2025-03-01", y: 0},
+                    {x: "2025-03-03", y: 63391.14},
+                    {x: "2025-03-04", y: 63391.14},
+                    {x: "2025-03-05", y: 63391.14},
+                    {x: "2025-03-06", y: 91882.28},
+                    {x: "2025-03-07", y: 98937.13},
+                    {x: "2025-03-08", y: 99336.38},
+                    {x: "2025-03-10", y: 129553.77},
+                    {x: "2025-03-11", y: 129553.77},
+                    {x: "2025-03-12", y: 129553.77},
+                    {x: "2025-03-13", y: 129553.77},
+                    {x: "2025-03-14", y: 166152.53},
+                    {x: "2025-03-15", y: 167021.54},
+                    {x: "2025-03-16", y: 167021.54},
+                    {x: "2025-03-17", y: 212419.12},
+                    {x: "2025-03-18", y: 214093.28},
+                    {x: "2025-03-19", y: 224381.46},
+                    {x: "2025-03-20", y: 224381.46},
+                    {x: "2025-03-21", y: 270459.77},
+                    {x: "2025-03-22", y: 377487.72},
+                    {x: "2025-03-24", y: 387775.9},
+                    {x: "2025-03-25", y: 416267.04},
+                    {x: "2025-03-26", y: 446922.48},
+                    {x: "2025-03-27", y: 468034.65},
+                    {x: "2025-03-28", y: 478322.83},
+                    {x: "2025-03-29", y: 478322.83},
+                    {x: "2025-03-31", y: 504415.11},
+                    {x: "2025-04-01", y: 504415.11},
+                    {x: "2025-04-02", y: 530639.13},
+                    {x: "2025-04-03", y: 550639.13},
+                    {x: "2025-04-04", y: 551139.13},
+                    {x: "2025-04-05", y: 567863.13},
+                    {x: "2025-04-06", y: 567863.13},
+                    {x: "2025-04-07", y: 567863.13},
+                    {x: "2025-04-08", y: 567863.13}
+                ],
+                borderColor: "#59a14f",
+                backgroundColor: "#59a14f20",
+                borderWidth: 2,
+                fill: false
+            },
+            {
+                label: "Vivian Moreno",
+                data: [
+                    {x: "2025-02-12", y: 0},
+                    {x: "2025-02-17", y: 0},
+                    {x: "2025-03-01", y: 0},
+                    {x: "2025-03-03", y: 0},
+                    {x: "2025-03-04", y: 66204.09},
+                    {x: "2025-03-05", y: 124217.05},
+                    {x: "2025-03-06", y: 197898.73},
+                    {x: "2025-03-07", y: 197898.73},
+                    {x: "2025-03-08", y: 230521.47},
+                    {x: "2025-03-10", y: 268699.1},
+                    {x: "2025-03-11", y: 268699.1},
+                    {x: "2025-03-12", y: 324836.44},
+                    {x: "2025-03-13", y: 324836.44},
+                    {x: "2025-03-14", y: 324836.44},
+                    {x: "2025-03-15", y: 345536.44},
+                    {x: "2025-03-16", y: 345536.44},
+                    {x: "2025-03-17", y: 383815.33},
+                    {x: "2025-03-18", y: 383815.33},
+                    {x: "2025-03-19", y: 398545.46},
+                    {x: "2025-03-20", y: 447146.09},
+                    {x: "2025-03-21", y: 464646.09},
+                    {x: "2025-03-22", y: 464646.09},
+                    {x: "2025-03-24", y: 539732.72},
+                    {x: "2025-03-25", y: 539732.72},
+                    {x: "2025-03-26", y: 552902.77},
+                    {x: "2025-03-27", y: 591423.43},
+                    {x: "2025-03-28", y: 641282.95},
+                    {x: "2025-03-29", y: 648289.65},
+                    {x: "2025-03-31", y: 676681.79},
+                    {x: "2025-04-01", y: 723706.56},
+                    {x: "2025-04-02", y: 777735.53},
+                    {x: "2025-04-03", y: 800349.91},
+                    {x: "2025-04-04", y: 800349.91},
+                    {x: "2025-04-05", y: 800815.11},
+                    {x: "2025-04-06", y: 809697.82},
+                    {x: "2025-04-07", y: 809697.82},
+                    {x: "2025-04-08", y: 864941.68}
+                ],
+                borderColor: "#e15759",
+                backgroundColor: "#e1575920",
+                borderWidth: 2,
+                fill: false
+            },
+            {
+                label: "Lincoln Pickard",
+                data: [
+                    {x: "2025-02-12", y: 0},
+                    {x: "2025-02-17", y: 0},
+                    {x: "2025-03-01", y: 0},
+                    {x: "2025-03-03", y: 0},
+                    {x: "2025-03-04", y: 0},
+                    {x: "2025-03-05", y: 0},
+                    {x: "2025-03-06", y: 0},
+                    {x: "2025-03-07", y: 0},
+                    {x: "2025-03-08", y: 0},
+                    {x: "2025-03-10", y: 0},
+                    {x: "2025-03-11", y: 0},
+                    {x: "2025-03-12", y: 0},
+                    {x: "2025-03-13", y: 8418.24},
+                    {x: "2025-03-14", y: 8418.24},
+                    {x: "2025-03-15", y: 8418.24},
+                    {x: "2025-03-16", y: 8418.24},
+                    {x: "2025-03-17", y: 14573.63},
+                    {x: "2025-03-18", y: 14573.63},
+                    {x: "2025-03-19", y: 14573.63},
+                    {x: "2025-03-20", y: 14573.63},
+                    {x: "2025-03-21", y: 14573.63},
+                    {x: "2025-03-22", y: 14573.63},
+                    {x: "2025-03-24", y: 14573.63},
+                    {x: "2025-03-25", y: 14573.63},
+                    {x: "2025-03-26", y: 21482.06},
+                    {x: "2025-03-27", y: 21482.06},
+                    {x: "2025-03-28", y: 21482.06},
+                    {x: "2025-03-29", y: 21482.06},
+                    {x: "2025-03-31", y: 21482.06},
+                    {x: "2025-04-01", y: 21482.06},
+                    {x: "2025-04-02", y: 21482.06},
+                    {x: "2025-04-03", y: 21482.06},
+                    {x: "2025-04-04", y: 21482.06},
+                    {x: "2025-04-05", y: 21482.06},
+                    {x: "2025-04-06", y: 21482.06},
+                    {x: "2025-04-07", y: 21482.06},
+                    {x: "2025-04-08", y: 21482.06}
+                ],
+                borderColor: "#76b7b2",
+                backgroundColor: "#76b7b220",
+                borderWidth: 2,
+                fill: false
+            }
+        ];
+
+        // Create the chart
+        const ctx = document.getElementById('spendingTimeChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            unit: 'day',
+                            displayFormats: {
+                                day: 'MMM d'
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Cumulative Spending ($)'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value.toLocaleString();
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Cumulative Spending in Support of Candidates Over Time',
+                        font: {
+                            size: 16
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': $' + context.parsed.y.toLocaleString();
+                            }
+                        }
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                },
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                }
+            }
+        });
+    });
+    </script>
 </section>
 
 <!-- Candidate Opposition Breakdown Section -->
