@@ -8,45 +8,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
-        <header class="mb-8">
-            <h1 class="text-3xl font-bold text-gray-800 mb-2">San Diego County District 1 Supervisor Race</h1>
-            <p class="text-gray-600">Election Analysis Report</p>
+    <div class="container mx-auto px-4 py-8 max-w-4xl shadow-sm">
+        <header class="mb-12 bg-white border-l-8 border-yellow-500 p-8 shadow-lg">
+          <h1 class="text-5xl font-extrabold text-gray-900 mb-2">San Diego County District 1 Supervisor Race</h1>
+          <p class="text-gray-600 text-lg mb-6">Election Analysis Report — March 2025 Special Election</p>
+          <div class="text-sm text-gray-700 space-y-2">
+            <p>Report created by <a href="mailto:mason@edgewater-strategies.com" class="underline text-yellow-600">Mason Herron</a>. Email with questions, feedback, or other inquiries.</p>
+            <p>Follow <a href="https://x.com/mason_herron" class="underline text-yellow-600" target="_blank" rel="noopener">@mason_herron</a> or <a href="https://www.linkedin.com/in/masonherron/" class="underline text-yellow-600" target="_blank" rel="noopener">LinkedIn</a>.</p>
+            <p>Visit <a href="https://www.theballotbook.com" class="underline text-yellow-600" target="_blank" rel="noopener">www.theballotbook.com</a> for more California political data and analysis.</p>
+          </div>
         </header>
+
+        <!-- Report Overview Section -->
+        <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Report Overview</h2>
+            <p class="mb-4">This report provides a comprehensive breakdown of the March 2025 special election for San Diego County District 1 Supervisor. It includes:</p>
+            <ul class="list-disc pl-6 text-gray-700 mb-4">
+                <li>Voter registration data and turnout analysis by party affiliation</li>
+                <li>Candidate vote totals and partisan vote share estimates</li>
+                <li>Neighborhood-level results for comparative geographic insights</li>
+                <li>Campaign finance activity including contributions, expenditures, and Form 497 filings</li>
+                <li>Spending by political parties on member communications</li>
+                <li>Independent expenditures for and against candidates</li>
+                <li>Breakdowns of support and opposition by individual committees</li>
+            </ul>
+            <p class="text-gray-600">This analysis was compiled using publicly available campaign finance disclosures, voter registration records, and election results.</p>
+        </section>
+
+        <main>
 
         <main>
             <!-- Voter Registration Section -->
-            <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Voter Registration Data</h2>
+            <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Voter Registration Data</h2>
                 
                 <p class="mb-4">The following table shows the voter registration breakdown in San Diego County Supervisors District 1:</p>
                 
                 <div class="overflow-x-auto mb-6">
                     <table class="min-w-full bg-white border border-gray-300">
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="py-2 px-4 border-b text-left">Party Affiliation</th>
-                                <th class="py-2 px-4 border-b text-right">Number of Registered Voters</th>
-                                <th class="py-2 px-4 border-b text-right">Percentage</th>
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Party Affiliation</th>
+                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Number of Registered Voters</th>
+                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Percentage</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="odd:bg-gray-50 even:bg-white">
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Democratic</td>
                                 <td class="py-2 px-4 border-b text-right">168,590</td>
                                 <td class="py-2 px-4 border-b text-right">45.15%</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Republican</td>
                                 <td class="py-2 px-4 border-b text-right">82,430</td>
                                 <td class="py-2 px-4 border-b text-right">22.07%</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Other</td>
                                 <td class="py-2 px-4 border-b text-right">122,391</td>
                                 <td class="py-2 px-4 border-b text-right">32.78%</td>
                             </tr>
-                            <tr class="font-bold bg-gray-50">
+                            <tr class="font-bold bg-gray-50 hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Total</td>
                                 <td class="py-2 px-4 border-b text-right">373,409</td>
                                 <td class="py-2 px-4 border-b text-right">100%</td>
@@ -60,33 +83,33 @@
             </section>
 
             <!-- Voter Turnout Section -->
-            <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Voter Turnout by Party Registration</h2>
+            <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Voter Turnout by Party Registration</h2>
                 
                 <p class="mb-4">While Democrats make up the largest share of registered voters in the district, the actual turnout in this special election primary showed somewhat different participation rates among party registrants. The data was obtained from the San Diego County Registrar of Voters.</p>
                 
                 <div class="overflow-x-auto mb-6">
                     <table class="min-w-full bg-white border border-gray-300">
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="py-2 px-4 border-b text-left">Party Registration</th>
-                                <th class="py-2 px-4 border-b text-right">Percentage of Votes Cast</th>
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Party Registration</th>
+                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Percentage of Votes Cast</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="odd:bg-gray-50 even:bg-white">
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Democratic</td>
                                 <td class="py-2 px-4 border-b text-right">48.1%</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Republican</td>
                                 <td class="py-2 px-4 border-b text-right">32.1%</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Other</td>
                                 <td class="py-2 px-4 border-b text-right">19.8%</td>
                             </tr>
-                            <tr class="font-bold bg-gray-50">
+                            <tr class="font-bold bg-gray-50 hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Total</td>
                                 <td class="py-2 px-4 border-b text-right">100%</td>
                             </tr>
@@ -99,59 +122,59 @@
             </section>
 
             <!-- Candidate Results Section -->
-            <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Candidate Results</h2>
+            <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Candidate Results</h2>
                 
                 <p class="mb-4">The following table presents the election results for each candidate, including their party affiliation and vote totals:</p>
                 
                 <div class="overflow-x-auto mb-6">
                     <table class="min-w-full bg-white border border-gray-300">
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="py-2 px-4 border-b text-left">Candidate</th>
-                                <th class="py-2 px-4 border-b text-right">Votes Received</th>
-                                <th class="py-2 px-4 border-b text-right">Percentage</th>
-                                <th class="py-2 px-4 border-b text-center">Party</th>
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Candidate</th>
+                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Votes Received</th>
+                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Percentage</th>
+                                <th class="py-2 px-4 border-b text-center sticky top-0 z-10">Party</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="odd:bg-gray-50 even:bg-white">
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">John McCann</td>
                                 <td class="py-2 px-4 border-b text-right">28,087</td>
                                 <td class="py-2 px-4 border-b text-right">42.38%</td>
                                 <td class="py-2 px-4 border-b text-center bg-red-100">R</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Paloma Aguirre</td>
                                 <td class="py-2 px-4 border-b text-right">21,424</td>
                                 <td class="py-2 px-4 border-b text-right">32.33%</td>
                                 <td class="py-2 px-4 border-b text-center bg-blue-100">D</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Vivian Moreno</td>
                                 <td class="py-2 px-4 border-b text-right">8,934</td>
                                 <td class="py-2 px-4 border-b text-right">13.48%</td>
                                 <td class="py-2 px-4 border-b text-center bg-blue-100">D</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Carolina Chavez</td>
                                 <td class="py-2 px-4 border-b text-right">5,128</td>
                                 <td class="py-2 px-4 border-b text-right">7.74%</td>
                                 <td class="py-2 px-4 border-b text-center bg-blue-100">D</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Louis A. Fuentes</td>
                                 <td class="py-2 px-4 border-b text-right">1,053</td>
                                 <td class="py-2 px-4 border-b text-right">1.59%</td>
                                 <td class="py-2 px-4 border-b text-center bg-red-100">R</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Elizabeth Efird</td>
                                 <td class="py-2 px-4 border-b text-right">1,027</td>
                                 <td class="py-2 px-4 border-b text-right">1.55%</td>
                                 <td class="py-2 px-4 border-b text-center bg-blue-100">D</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Lincoln Pickard</td>
                                 <td class="py-2 px-4 border-b text-right">619</td>
                                 <td class="py-2 px-4 border-b text-right">0.93%</td>
@@ -164,29 +187,29 @@
             </section>
 
             <!-- Vote Totals Section -->
-            <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Vote Totals by Party</h2>
+            <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Vote Totals by Party</h2>
                 
                 <p class="mb-4">While this was a non-partisan race and party affiliation did not appear on the ballot, the following table aggregates candidate vote totals based on their known party affiliation. This can serve as a helpful general indicator of whether voters in District 1 leaned more toward Democratic or Republican candidates overall.</p>
                 
                 <div class="overflow-x-auto mb-6">
                     <table class="min-w-full bg-white border border-gray-300">
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="py-2 px-4 border-b text-left">Party</th>
-                                <th class="py-2 px-4 border-b text-right">Percentage of Total Votes</th>
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Party</th>
+                                <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Percentage of Total Votes</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="odd:bg-gray-50 even:bg-white">
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Democratic</td>
                                 <td class="py-2 px-4 border-b text-right">55.10%</td>
                             </tr>
-                            <tr>
+                            <tr class="hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Republican</td>
                                 <td class="py-2 px-4 border-b text-right">44.90%</td>
                             </tr>
-                            <tr class="font-bold bg-gray-50">
+                            <tr class="font-bold bg-gray-50 hover:bg-gray-100">
                                 <td class="py-2 px-4 border-b">Total</td>
                                 <td class="py-2 px-4 border-b text-right">100%</td>
                             </tr>
@@ -198,10 +221,10 @@
             </section>
 
             <!-- Neighborhood Results Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Neighborhood-Level Election Results</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Neighborhood-Level Election Results</h2>
     
-    <p class="mb-4 font-semibold text-blue-700">🔍 Tip: Click any column header in the table below to sort the data by that candidate's performance or neighborhood name. This makes it easy to compare who performed best in different areas.</p>
+    <p class="mb-4 font-semibold text-yellow-600">🔍 Tip: Click any column header in the table below to sort the data by that candidate's performance or neighborhood name. This makes it easy to compare who performed best in different areas.</p>
     
     <div class="overflow-x-auto mb-6">
         <table id="neighborhood-results" class="min-w-full bg-white border border-gray-300">
@@ -528,47 +551,47 @@
 </section>
 
         <!-- Campaign Finance Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Campaign Finance Data</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Campaign Finance Data</h2>
     
     <p class="mb-4">The following table presents the campaign finance information for candidates in the San Diego County Supervisors District 1 special election primary:</p>
     
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-300">
-            <thead>
-                <tr class="bg-gray-100">
-                    <th class="py-2 px-4 border-b text-left">Committee</th>
-                    <th class="py-2 px-4 border-b text-right">Total Contributions through 3/22</th>
-                    <th class="py-2 px-4 border-b text-right">Total Expenditures through 3/22</th>
-                    <th class="py-2 px-4 border-b text-right">Additional Raised Since 3/22</th>
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Committee</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Total Contributions through 3/22</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Total Expenditures through 3/22</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Additional Raised Since 3/22</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="odd:bg-gray-50 even:bg-white">
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">McCann for Supervisor 2025</td>
                     <td class="py-2 px-4 border-b text-right">$231,292.25</td>
                     <td class="py-2 px-4 border-b text-right">$98,775.46</td>
                     <td class="py-2 px-4 border-b text-right">$31,800.00</td>
                 </tr>
-                <tr>
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Paloma Aguirre for Supervisor 2025</td>
                     <td class="py-2 px-4 border-b text-right">$133,845.00</td>
                     <td class="py-2 px-4 border-b text-right">$125,847.86</td>
                     <td class="py-2 px-4 border-b text-right">$19,100.00</td>
                 </tr>
-                <tr>
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Vivian Moreno for Supervisor 2025</td>
                     <td class="py-2 px-4 border-b text-right">$134,838.04</td>
                     <td class="py-2 px-4 border-b text-right">$135,089.67</td>
                     <td class="py-2 px-4 border-b text-right">$7,200.00</td>
                 </tr>
-                <tr>
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Carolina Chavez for Supervisor 2025</td>
                     <td class="py-2 px-4 border-b text-right">$51,256.00</td>
                     <td class="py-2 px-4 border-b text-right">$45,916.24</td>
                     <td class="py-2 px-4 border-b text-right">$24,700.00</td>
                 </tr>
-                <tr>
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Committee to Elect Louis Fuentes</td>
                     <td class="py-2 px-4 border-b text-right">$9,189.54</td>
                     <td class="py-2 px-4 border-b text-right">$6,130.72</td>
@@ -584,8 +607,8 @@
 </section>
 
 <!-- Party Committee Spending Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Party Committee Spending (Member Communications)</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Party Committee Spending (Member Communications)</h2>
     
     <p class="mb-6">Political parties can spend money on candidates in the form of "member communications," which are filed as contributions via Form 497. Below are the reported party committee expenditures for the top two candidates.</p>
     
@@ -596,14 +619,14 @@
             
             <div class="overflow-x-auto mb-4">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Date</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Date</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">4/2/25</td>
                             <td class="py-2 px-4 border-b text-right">$2,205.00</td>
                         </tr>
@@ -647,7 +670,7 @@
                             <td class="py-2 px-4 border-b">2/24/25</td>
                             <td class="py-2 px-4 border-b text-right">$51,856.44</td>
                         </tr>
-                        <tr class="font-bold bg-blue-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Total</td>
                             <td class="py-2 px-4 border-b text-right">$173,841.09</td>
                         </tr>
@@ -662,14 +685,14 @@
             
             <div class="overflow-x-auto mb-4">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Date</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Date</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">3/31/25</td>
                             <td class="py-2 px-4 border-b text-right">$16,658.00</td>
                         </tr>
@@ -725,7 +748,7 @@
                             <td class="py-2 px-4 border-b">2/11/25</td>
                             <td class="py-2 px-4 border-b text-right">$1,000.00</td>
                         </tr>
-                        <tr class="font-bold bg-red-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Total</td>
                             <td class="py-2 px-4 border-b text-right">$83,393.46</td>
                         </tr>
@@ -738,23 +761,23 @@
 </section>
 
 <!-- Independent Expenditures Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Independent Expenditure Spending</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Spending</h2>
     
     <p class="mb-4">Independent expenditures are payments for communications that expressly advocate for the election or defeat of a candidate without coordination with the candidate's campaign. The table below presents the independent expenditure spending in support of and opposition to each candidate in the District 1 Supervisor race:</p>
     
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-300">
-            <thead>
-                <tr class="bg-gray-100">
-                    <th class="py-2 px-4 border-b text-left">Candidate</th>
-                    <th class="py-2 px-4 border-b text-right">Opposition Spending</th>
-                    <th class="py-2 px-4 border-b text-right">Support Spending</th>
-                    <th class="py-2 px-4 border-b text-right">Net Impact</th>
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Candidate</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Opposition Spending</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Support Spending</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Net Impact</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="odd:bg-gray-50 even:bg-white">
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Vivian Moreno</td>
                     <td class="py-2 px-4 border-b text-right text-red-600">$58,422</td>
                     <td class="py-2 px-4 border-b text-right text-green-600">$864,942</td>
@@ -784,7 +807,7 @@
                     <td class="py-2 px-4 border-b text-right text-green-600">$21,482</td>
                     <td class="py-2 px-4 border-b text-right font-medium text-green-600">+$21,482</td>
                 </tr>
-                <tr class="font-bold bg-gray-50">
+                <tr class="font-bold bg-gray-50 hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Total</td>
                     <td class="py-2 px-4 border-b text-right">$699,290</td>
                     <td class="py-2 px-4 border-b text-right">$2,076,630</td>
@@ -798,21 +821,21 @@
 </section>
 
 <!-- IE Spending by Entity Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Independent Expenditure Spending by Entity</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Spending by Entity</h2>
     
     <p class="mb-4">The following table details the independent expenditure spending by each committee or organization involved in the District 1 Supervisor race:</p>
     
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-300">
-            <thead>
-                <tr class="bg-gray-100">
-                    <th class="py-2 px-4 border-b text-left">Entity</th>
-                    <th class="py-2 px-4 border-b text-right">Amount</th>
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                    <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="odd:bg-gray-50 even:bg-white">
+                <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Working Families to Support Paloma Aguirre for Board of Supervisors 2025, sponsored by Service Employees International Union Local 221</td>
                     <td class="py-2 px-4 border-b text-right">$447,996.14</td>
                 </tr>
@@ -872,7 +895,7 @@
                     <td class="py-2 px-4 border-b">International Brotherhood of Electrical Workers Local 569 Candidate PAC</td>
                     <td class="py-2 px-4 border-b text-right">$1,721.21</td>
                 </tr>
-                <tr class="font-bold bg-gray-50">
+                <tr class="font-bold bg-gray-50 hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Grand Total</td>
                     <td class="py-2 px-4 border-b text-right">$2,070,073.50</td>
                 </tr>
@@ -894,8 +917,8 @@
 </section>
 
 <!-- Candidate Support Breakdown Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Independent Expenditure Support by Candidate</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Support by Candidate</h2>
     
     <p class="mb-4">The following tables break down the independent expenditure spending that supported each candidate, showing which entities contributed to their campaigns:</p>
     
@@ -906,14 +929,14 @@
             <h3 class="text-xl font-bold mb-3 text-gray-800">John McCann Support</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Entity</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Citizens for a Better South Bay- in support of John McCann for Supervisor 2025</td>
                             <td class="py-2 px-4 border-b text-right">$199,327.04</td>
                         </tr>
@@ -929,7 +952,7 @@
                             <td class="py-2 px-4 border-b">Citizens for a Better East County CBEC</td>
                             <td class="py-2 px-4 border-b text-right">$10,000.00</td>
                         </tr>
-                        <tr class="font-bold bg-red-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$385,358.93</td>
                         </tr>
@@ -943,14 +966,14 @@
             <h3 class="text-xl font-bold mb-3 text-gray-800">Paloma Aguirre Support</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Entity</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Working Families to Support Paloma Aguirre for Board of Supervisors 2025, sponsored by Service Employees International Union Local 221</td>
                             <td class="py-2 px-4 border-b text-right">$428,522.12</td>
                         </tr>
@@ -966,7 +989,7 @@
                             <td class="py-2 px-4 border-b">International Brotherhood of Electrical Workers Local 569 Candidate PAC</td>
                             <td class="py-2 px-4 border-b text-right">$1,721.21</td>
                         </tr>
-                        <tr class="font-bold bg-blue-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$459,559.94</td>
                         </tr>
@@ -980,14 +1003,14 @@
             <h3 class="text-xl font-bold mb-3 text-gray-800">Vivian Moreno Support</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Entity</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Working Families Supporting Vivian Moreno for Supervisor 2025, Sponsored by Laborers International Union of North America, Local 89</td>
                             <td class="py-2 px-4 border-b text-right">$401,551.90</td>
                         </tr>
@@ -999,7 +1022,7 @@
                             <td class="py-2 px-4 border-b">Protect Neighborhood Services Now, Sponsored by San Diego Municipal Employees Association</td>
                             <td class="py-2 px-4 border-b text-right">$70,173.26</td>
                         </tr>
-                        <tr class="font-bold bg-blue-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$591,423.43</td>
                         </tr>
@@ -1013,18 +1036,18 @@
             <h3 class="text-xl font-bold mb-3 text-gray-800">Carolina Chavez Support</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Entity</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Unity Supports Chavez Supervisor 2025</td>
                             <td class="py-2 px-4 border-b text-right">$109,066.28</td>
                         </tr>
-                        <tr class="font-bold bg-blue-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$109,066.28</td>
                         </tr>
@@ -1038,18 +1061,18 @@
             <h3 class="text-xl font-bold mb-3 text-gray-800">Lincoln Pickard Support</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Entity</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Labor Coalition, Sponsored by Laborers' International Union of North America Local 89</td>
                             <td class="py-2 px-4 border-b text-right">$21,482.06</td>
                         </tr>
-                        <tr class="font-bold bg-red-50">
+                        <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$21,482.06</td>
                         </tr>
@@ -1069,8 +1092,8 @@
 </section>
 
 <!-- Candidate Opposition Breakdown Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Independent Expenditure Opposition by Candidate</h2>
+<section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+    <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b pb-2">Independent Expenditure Opposition by Candidate</h2>
     
     <p class="mb-4">The following tables break down the independent expenditure spending that opposed specific candidates, showing which entities funded opposition campaigns:</p>
     
@@ -1078,17 +1101,17 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
         <!-- Paloma Aguirre Opposition -->
         <div class="bg-gray-50 p-4 rounded-md border border-gray-200">
-            <h3 class="text-xl font-bold mb-3 text-gray-800">Paloma Aguirre Opposition</h3>
+            <h3 class="text-xl font-bold mb-3 text-blue-700">Paloma Aguirre Opposition</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-2 px-4 border-b text-left">Entity</th>
-                            <th class="py-2 px-4 border-b text-right">Amount</th>
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left sticky top-0 z-10">Entity</th>
+                            <th class="py-2 px-4 border-b text-right sticky top-0 z-10">Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="odd:bg-gray-50 even:bg-white">
+                        <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Working Families Against Paloma Aguirre for Supervisor 2025, Sponsored by Laborers' International Union of North America, Local 89</td>
                             <td class="py-2 px-4 border-b text-right">$356,211.17</td>
                         </tr>
@@ -1100,7 +1123,7 @@
                             <td class="py-2 px-4 border-b">San Diego Labor Coalition Issues PAC, sponsored by Laborers' International Union of North America Local 89</td>
                             <td class="py-2 px-4 border-b text-right">$22,007.90</td>
                         </tr>
-                        <tr class="font-bold bg-blue-50">
+                        <tr class="font-bold bg-blue-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$451,896.65</td>
                         </tr>
@@ -1111,7 +1134,7 @@
         
         <!-- Vivian Moreno Opposition -->
         <div class="bg-gray-50 p-4 rounded-md border border-gray-200">
-            <h3 class="text-xl font-bold mb-3 text-gray-800">Vivian Moreno Opposition</h3>
+            <h3 class="text-xl font-bold mb-3 text-blue-700">Vivian Moreno Opposition</h3>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-300">
                     <thead>
