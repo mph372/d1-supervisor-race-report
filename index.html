@@ -540,6 +540,66 @@
             }
         }
     </script>
+    <!-- Neighborhood Winners Section -->
+<div class="mt-8 bg-gray-50 p-6 rounded-lg border border-gray-200">
+    <h3 class="text-xl font-bold mb-4 text-gray-800">Neighborhood Winners</h3>
+    
+    <p class="mb-4">Below is a summary of which candidate received the highest percentage of votes in each neighborhood:</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- John McCann's winning neighborhoods -->
+        <div class="bg-white p-4 rounded shadow-sm border-l-4 border-red-400">
+            <h4 class="font-bold text-gray-800 mb-2">John McCann (7 neighborhoods)</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>BONITA (56.34%)</li>
+                <li>CHULA VISTA (49.51%)</li>
+                <li>NATIONAL CITY (36.46%)</li>
+                <li>OTAY (32.87%)</li>
+                <li>SAN YSIDRO (30.24%)</li>
+                <li>SPRING VALLEY (46.11%)</li>
+                <li>SWEETWATER (59.11%)</li>
+            </ul>
+        </div>
+        
+        <!-- Paloma Aguirre's winning neighborhoods -->
+        <div class="bg-white p-4 rounded shadow-sm border-l-4 border-blue-400">
+            <h4 class="font-bold text-gray-800 mb-2">Paloma Aguirre (8 neighborhoods)</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>BALBOA PARK (57.01%)</li>
+                <li>CENTRE CITY (39.94%)</li>
+                <li>CHOLLAS PARK (31.79%)</li>
+                <li>GOLDEN HILL (49.69%)</li>
+                <li>HARBOR (40.92%)</li>
+                <li>IMPERIAL BEACH (48.08%)</li>
+                <li>LINCOLN ACRES (40.22%)</li>
+                <li>SOUTH PARK (58.75%)</li>
+                <li>NESTOR (35.58%)</li>
+                <li>SE SAN DIEGO E (36.78%)</li>
+            </ul>
+        </div>
+        
+        <!-- Vivian Moreno's winning neighborhoods -->
+        <div class="bg-white p-4 rounded shadow-sm border-l-4 border-green-400">
+            <h4 class="font-bold text-gray-800 mb-2">Vivian Moreno (1 neighborhood)</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>SE SAN DIEGO W (48.68%)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mt-6 bg-yellow-50 p-4 rounded border border-yellow-200">
+        <h4 class="font-semibold text-gray-800 mb-2">Geographic Analysis:</h4>
+        <p class="text-gray-700">
+            John McCann performed strongest in the southern and eastern portions of the district, particularly in Chula Vista (his political base) and surrounding communities like Bonita and Sweetwater where he received over 55% of the vote.
+        </p>
+        <p class="text-gray-700 mt-2">
+            Paloma Aguirre dominated in the western coastal areas including Imperial Beach, where she currently serves as Mayor, as well as the urban core neighborhoods like Balboa Park and South Park where she received over 55% of the vote.
+        </p>
+        <p class="text-gray-700 mt-2">
+            Vivian Moreno's support was concentrated in Southeast San Diego West, where she was the top vote-getter with 48.68% of the vote. She also performed well in southern neighborhoods like San Ysidro and Otay where she placed second or third. These areas notably fall within her current San Diego City Council District 8, where she has served since 2018.
+        </p>
+    </div>
+</div>
 </section>
 
 <!-- Chula Vista vs Other Areas Comparison Section -->
@@ -601,6 +661,8 @@
         <p class="mb-2">Note: Chula Vista accounted for 50.62% of all votes cast in this election (33,543 out of 66,264 total votes).</p>
         <p>This table shows that John McCann received 49.51% of the vote in Chula Vista compared to 35.07% in other areas, a significant home field advantage of 14.44 percentage points. Conversely, both Paloma Aguirre and Vivian Moreno performed better outside of Chula Vista, with Moreno seeing the largest disparity (17.81% in other areas vs. 9.26% in Chula Vista).</p>
     </div>
+
+    
 </section>
 
         <!-- Campaign Finance Section -->
@@ -664,6 +726,14 @@
     <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Party Committee Spending (Member Communications)</h2>
     
     <p class="mb-6">Political parties can spend money on candidates in the form of "member communications," which are filed as contributions via Form 497. Below are the reported party committee expenditures for the top two candidates.</p>
+    <p class="text-sm text-gray-500 mb-6">
+      Note: Some Form 497 filings report monetary contributions from parties to candidates. These have been excluded here, as such contributions (up to $35,200 under county rules) are already included in the candidate committees’ total contributions (in the above table) and would otherwise be double-counted.
+    </p>
+    <p class="text-sm text-gray-500 mb-6">
+        Source: 
+        <a href="https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1018460&view=late2" target="_blank" class="underline text-blue-600 hover:text-blue-800">San Diego County Democratic Party</a>, 
+        <a href="https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1018475&view=late2" target="_blank" class="underline text-blue-600 hover:text-blue-800">Republican Party of San Diego County</a>
+    </p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Democratic Party Spending -->
@@ -818,6 +888,9 @@
     <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Spending</h2>
     
     <p class="mb-4">Independent expenditures are payments for communications that expressly advocate for the election or defeat of a candidate without coordination with the candidate's campaign. The table below presents the independent expenditure spending in support of and opposition to each candidate in the District 1 Supervisor race:</p>
+    <p class="text-sm text-gray-500 mb-4">
+      <a href="data/raw_itemized_expenditures.csv" download class="underline text-blue-600 hover:text-blue-800">Download raw itemized expenditure data (CSV)</a>
+    </p>
     
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-300">
@@ -874,6 +947,7 @@
 </section>
 
 <!-- IE Spending by Entity Section -->
+<!-- IE Spending by Entity Section -->
 <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
     <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Spending by Entity</h2>
     
@@ -890,35 +964,35 @@
             <tbody class="odd:bg-gray-50 even:bg-white">
                 <tr class="hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Working Families to Support Paloma Aguirre for Board of Supervisors 2025, sponsored by Service Employees International Union Local 221</td>
-                    <td class="py-2 px-4 border-b text-right">$447,996.14</td>
+                    <td class="py-2 px-4 border-b text-right">$543,142.20</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">San Diego Working Families Supporting Vivian Moreno for Supervisor 2025, Sponsored by Laborers International Union of North America, Local 89</td>
-                    <td class="py-2 px-4 border-b text-right">$401,551.90</td>
+                    <td class="py-2 px-4 border-b text-right">$551,123.50</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">San Diego Working Families Against Paloma Aguirre for Supervisor 2025, Sponsored by Laborers' International Union of North America, Local 89</td>
-                    <td class="py-2 px-4 border-b text-right">$356,211.17</td>
+                    <td class="py-2 px-4 border-b text-right">$464,685.28</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">Citizens for a Better South Bay- in support of John McCann for Supervisor 2025</td>
-                    <td class="py-2 px-4 border-b text-right">$199,327.04</td>
+                    <td class="py-2 px-4 border-b text-right">$264,541.22</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">Community Voices</td>
-                    <td class="py-2 px-4 border-b text-right">$193,375.85</td>
+                    <td class="py-2 px-4 border-b text-right">$260,049.89</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">San Diego Unity Supports Chavez Supervisor 2025</td>
+                    <td class="py-2 px-4 border-b text-right">$165,282.53</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">Protect Neighborhood Services Now, Sponsored by San Diego Municipal Employees Association</td>
+                    <td class="py-2 px-4 border-b text-right">$155,031.50</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">National Association of REALTORS Fund</td>
                     <td class="py-2 px-4 border-b text-right">$116,132.89</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b">San Diego Unity Supports Chavez Supervisor 2025</td>
-                    <td class="py-2 px-4 border-b text-right">$109,066.28</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b">Protect Neighborhood Services Now, Sponsored by San Diego Municipal Employees Association</td>
-                    <td class="py-2 px-4 border-b text-right">$70,173.26</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">Deputy Sheriffs' Association of San Diego County PAC</td>
@@ -929,16 +1003,32 @@
                     <td class="py-2 px-4 border-b text-right">$53,294.25</td>
                 </tr>
                 <tr>
-                    <td class="py-2 px-4 border-b">United Domestic Workers of America Action Fund</td>
-                    <td class="py-2 px-4 border-b text-right">$27,590.36</td>
+                    <td class="py-2 px-4 border-b">American Federation of Teachers Guild, Local 1931 San Diego and Grossmont - Cuyamaca Community Colleges Committee on Political Education</td>
+                    <td class="py-2 px-4 border-b text-right">$44,986.91</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">San Diego Labor Coalition Issues PAC, sponsored by Laborers' International Union of North America Local 89</td>
-                    <td class="py-2 px-4 border-b text-right">$22,007.90</td>
+                    <td class="py-2 px-4 border-b text-right">$36,907.24</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">United Domestic Workers of America Action Fund</td>
+                    <td class="py-2 px-4 border-b text-right">$34,708.62</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">California Working Families Party</td>
+                    <td class="py-2 px-4 border-b text-right">$18,500.00</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">Citizens for a Better East County CBEC</td>
                     <td class="py-2 px-4 border-b text-right">$10,000.00</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">Protect our Quality of Life PAC</td>
+                    <td class="py-2 px-4 border-b text-right">$6,487.00</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">Californians Against Hate PAC</td>
+                    <td class="py-2 px-4 border-b text-right">$6,200.00</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b">Courage California State PAC</td>
@@ -950,7 +1040,7 @@
                 </tr>
                 <tr class="font-bold bg-gray-50 hover:bg-gray-100">
                     <td class="py-2 px-4 border-b">Grand Total</td>
-                    <td class="py-2 px-4 border-b text-right">$2,070,073.50</td>
+                    <td class="py-2 px-4 border-b text-right">$2,794,419.49</td>
                 </tr>
             </tbody>
         </table>
@@ -958,15 +1048,15 @@
     
     <h3 class="text-xl font-bold mb-3 text-gray-800">Entity Spending Overview</h3>
     
-    <p class="mb-4">This data shows that labor unions and their sponsored committees played a significant role in independent expenditure activity during the District 1 Supervisor race. The top three spending entities were all labor-affiliated committees, accounting for approximately 58% of all independent expenditure spending.</p>
+    <p class="mb-4">This data shows that labor unions and their sponsored committees played a significant role in independent expenditure activity during the District 1 Supervisor race. The top three spending entities were all labor-affiliated committees, accounting for approximately 56% of all independent expenditure spending.</p>
     
-    <p class="mb-4">The largest spender was a committee sponsored by Service Employees International Union (SEIU) Local 221, which spent $447,996.14 in support of Paloma Aguirre. This represents about 22% of all independent expenditure spending in the race.</p>
+    <p class="mb-4">The largest spender was the committee sponsored by Laborers' International Union of North America (LIUNA) Local 89 supporting Vivian Moreno, which spent $551,123.50. This represents about 20% of all independent expenditure spending in the race. Close behind was the committee sponsored by Service Employees International Union (SEIU) Local 221 supporting Paloma Aguirre, which spent $543,142.20.</p>
     
-    <p class="mb-4">Laborers' International Union of North America (LIUNA) Local 89 sponsored multiple committees that were active in the race, including the second-largest spender supporting Vivian Moreno ($401,551.90) and the third-largest spender opposing Paloma Aguirre ($356,211.17). In total, LIUNA Local 89-affiliated committees spent over $833,000 across different efforts in this race.</p>
+    <p class="mb-4">LIUNA Local 89 sponsored multiple committees that were active in the race, including the largest spender supporting Vivian Moreno ($551,123.50) and the third-largest spender opposing Paloma Aguirre ($464,685.28). In total, LIUNA Local 89-affiliated committees spent over $1.1 million across different efforts in this race.</p>
     
-    <p class="mb-4">Business and real estate interests were also represented among the top spenders, with "Citizens for a Better South Bay" supporting John McCann ($199,327.04) and the National Association of REALTORS Fund ($116,132.89) both appearing among the larger spending entities.</p>
+    <p class="mb-4">Business and real estate interests were also represented among the top spenders, with "Citizens for a Better South Bay" supporting John McCann ($264,541.22) and the National Association of REALTORS Fund ($116,132.89) both appearing among the larger spending entities.</p>
     
-    <p>The data indicates that a relatively small number of entities conducted most of the independent expenditure activity, with the top five spenders accounting for approximately 77% of the total independent expenditure spending in the race.</p>
+    <p>The data indicates that a relatively small number of entities conducted most of the independent expenditure activity, with the top five spenders accounting for approximately 74% of the total independent expenditure spending in the race.</p>
 </section>
 
 <!-- Spending Over Time Section -->
@@ -1300,6 +1390,7 @@
 </section>
 
 <!-- Candidate Support Breakdown Section -->
+<!-- Candidate Support Breakdown Section -->
 <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
     <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Support by Candidate</h2>
     
@@ -1321,7 +1412,7 @@
                     <tbody class="odd:bg-gray-50 even:bg-white">
                         <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Citizens for a Better South Bay- in support of John McCann for Supervisor 2025</td>
-                            <td class="py-2 px-4 border-b text-right">$199,327.04</td>
+                            <td class="py-2 px-4 border-b text-right">$264,541.22</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">National Association of REALTORS Fund</td>
@@ -1335,9 +1426,13 @@
                             <td class="py-2 px-4 border-b">Citizens for a Better East County CBEC</td>
                             <td class="py-2 px-4 border-b text-right">$10,000.00</td>
                         </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Protect our Quality of Life PAC</td>
+                            <td class="py-2 px-4 border-b text-right">$6,487.00</td>
+                        </tr>
                         <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
-                            <td class="py-2 px-4 border-b text-right">$385,358.93</td>
+                            <td class="py-2 px-4 border-b text-right">$457,060.11</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1358,11 +1453,19 @@
                     <tbody class="odd:bg-gray-50 even:bg-white">
                         <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Working Families to Support Paloma Aguirre for Board of Supervisors 2025, sponsored by Service Employees International Union Local 221</td>
-                            <td class="py-2 px-4 border-b text-right">$428,522.12</td>
+                            <td class="py-2 px-4 border-b text-right">$484,720.14</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">American Federation of Teachers Guild, Local 1931 San Diego and Grossmont - Cuyamaca Community Colleges Committee on Political Education</td>
+                            <td class="py-2 px-4 border-b text-right">$44,986.91</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">United Domestic Workers of America Action Fund</td>
-                            <td class="py-2 px-4 border-b text-right">$27,590.36</td>
+                            <td class="py-2 px-4 border-b text-right">$34,708.62</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">California Working Families Party</td>
+                            <td class="py-2 px-4 border-b text-right">$18,500.00</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">Courage California State PAC</td>
@@ -1374,7 +1477,7 @@
                         </tr>
                         <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
-                            <td class="py-2 px-4 border-b text-right">$459,559.94</td>
+                            <td class="py-2 px-4 border-b text-right">$586,363.13</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1395,19 +1498,19 @@
                     <tbody class="odd:bg-gray-50 even:bg-white">
                         <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Working Families Supporting Vivian Moreno for Supervisor 2025, Sponsored by Laborers International Union of North America, Local 89</td>
-                            <td class="py-2 px-4 border-b text-right">$401,551.90</td>
+                            <td class="py-2 px-4 border-b text-right">$523,537.87</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">Community Voices</td>
-                            <td class="py-2 px-4 border-b text-right">$119,698.27</td>
+                            <td class="py-2 px-4 border-b text-right">$186,372.31</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">Protect Neighborhood Services Now, Sponsored by San Diego Municipal Employees Association</td>
-                            <td class="py-2 px-4 border-b text-right">$70,173.26</td>
+                            <td class="py-2 px-4 border-b text-right">$155,031.50</td>
                         </tr>
                         <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
-                            <td class="py-2 px-4 border-b text-right">$591,423.43</td>
+                            <td class="py-2 px-4 border-b text-right">$864,941.68</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1428,11 +1531,11 @@
                     <tbody class="odd:bg-gray-50 even:bg-white">
                         <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Unity Supports Chavez Supervisor 2025</td>
-                            <td class="py-2 px-4 border-b text-right">$109,066.28</td>
+                            <td class="py-2 px-4 border-b text-right">$165,282.53</td>
                         </tr>
                         <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
-                            <td class="py-2 px-4 border-b text-right">$109,066.28</td>
+                            <td class="py-2 px-4 border-b text-right">$165,282.53</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1467,9 +1570,9 @@
     
     <h3 class="text-xl font-bold mb-3 text-gray-800">Support Funding Overview</h3>
     
-    <p class="mb-4">These tables illustrate how supportive independent expenditure funding was distributed among the various candidates. Vivian Moreno received the highest amount of support funding at $591,423.43, primarily from labor union-affiliated committees. Paloma Aguirre received the second-highest amount at $459,559.94, with SEIU Local 221 providing the majority of her support funding.</p>
+    <p class="mb-4">These tables illustrate how supportive independent expenditure funding was distributed among the various candidates. Vivian Moreno received the highest amount of support funding at $864,941.68, primarily from labor union-affiliated committees. Paloma Aguirre received the second-highest amount at $586,363.13, with SEIU Local 221 providing the majority of her support funding.</p>
     
-    <p class="mb-4">John McCann's support funding of $385,358.93 came from a mix of business interests, the National Association of REALTORS, and public safety unions. Carolina Chavez received $109,066.28 in support funding, all from a single independent expenditure committee. Lincoln Pickard received $21,482.06 from a labor coalition sponsored by LIUNA Local 89.</p>
+    <p class="mb-4">John McCann's support funding of $457,060.11 came from a mix of business interests, the National Association of REALTORS, and public safety unions. Carolina Chavez received $165,282.53 in support funding, all from a single independent expenditure committee. Lincoln Pickard received $21,482.06 from a labor coalition sponsored by LIUNA Local 89.</p>
     
     <p>The data reveals different patterns of support for each candidate, with Democratic candidates receiving most of their support from labor unions, while Republican candidate John McCann received support mainly from business groups and public safety unions. Interestingly, Republican candidate Lincoln Pickard received his support from a labor organization.</p>
 </section>
@@ -1715,6 +1818,7 @@
 </section>
 
 <!-- Candidate Opposition Breakdown Section -->
+<!-- Candidate Opposition Breakdown Section -->
 <section class="mb-12 bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">    <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">Independent Expenditure Opposition by Candidate</h2>
     
     <p class="mb-4">The following tables break down the independent expenditure spending that opposed specific candidates, showing which entities funded opposition campaigns:</p>
@@ -1735,7 +1839,7 @@
                     <tbody class="odd:bg-gray-50 even:bg-white">
                         <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">San Diego Working Families Against Paloma Aguirre for Supervisor 2025, Sponsored by Laborers' International Union of North America, Local 89</td>
-                            <td class="py-2 px-4 border-b text-right">$356,211.17</td>
+                            <td class="py-2 px-4 border-b text-right">$464,685.28</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">Community Voices</td>
@@ -1743,11 +1847,19 @@
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b">San Diego Labor Coalition Issues PAC, sponsored by Laborers' International Union of North America Local 89</td>
-                            <td class="py-2 px-4 border-b text-right">$22,007.90</td>
+                            <td class="py-2 px-4 border-b text-right">$36,907.24</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">San Diego Working Families Supporting Vivian Moreno for Supervisor 2025, Sponsored by Laborers International Union of North America, Local 89</td>
+                            <td class="py-2 px-4 border-b text-right">$27,585.63</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Californians Against Hate PAC</td>
+                            <td class="py-2 px-4 border-b text-right">$6,200.00</td>
                         </tr>
                         <tr class="font-bold bg-yellow-50 hover:bg-gray-100">
                             <td class="py-2 px-4 border-b">Grand Total</td>
-                            <td class="py-2 px-4 border-b text-right">$451,896.65</td>
+                            <td class="py-2 px-4 border-b text-right">$609,055.73</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1768,11 +1880,11 @@
                     <tbody>
                         <tr>
                             <td class="py-2 px-4 border-b">Working Families to Support Paloma Aguirre for Board of Supervisors 2025, sponsored by Service Employees International Union Local 221</td>
-                            <td class="py-2 px-4 border-b text-right">$19,474.02</td>
+                            <td class="py-2 px-4 border-b text-right">$58,422.06</td>
                         </tr>
                         <tr class="font-bold bg-yellow-50">
                             <td class="py-2 px-4 border-b">Grand Total</td>
-                            <td class="py-2 px-4 border-b text-right">$19,474.02</td>
+                            <td class="py-2 px-4 border-b text-right">$58,422.06</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1795,7 +1907,7 @@
                             <td class="py-2 px-4 border-b">San Diego Labor Coalition, Sponsored by Laborers' International Union of North America Local 89</td>
                             <td class="py-2 px-4 border-b text-right">$31,812.19</td>
                         </tr>
-                        <tr class="font-bold bg-red-50">
+                        <tr class="font-bold bg-yellow-50">
                             <td class="py-2 px-4 border-b">Grand Total</td>
                             <td class="py-2 px-4 border-b text-right">$31,812.19</td>
                         </tr>
@@ -1807,10 +1919,11 @@
     
     <h3 class="text-xl font-bold mb-3 text-gray-800">Opposition Funding Overview</h3>
     
-    <p class="mb-4">The independent expenditure opposition funding in this race was heavily concentrated on Paloma Aguirre, who faced $451,896.65 in opposition spending. This represents approximately 90% of all opposition independent expenditures in the race. Nearly 84% of the opposition spending against Aguirre came from committees sponsored by Laborers' International Union of North America (LIUNA) Local 89.</p>
+    <p class="mb-4">The independent expenditure opposition funding in this race was heavily concentrated on Paloma Aguirre, who faced $609,055.73 in opposition spending. This represents approximately 87% of all opposition independent expenditures in the race. Nearly 87% of the opposition spending against Aguirre came from committees sponsored by Laborers' International Union of North America (LIUNA) Local 89 and its affiliated organizations.</p>
     
-    <p class="mb-4">John McCann faced $31,812.19 in opposition spending, all from a single labor coalition sponsored by LIUNA Local 89. Vivian Moreno received the least opposition with $19,474.02, all from a committee sponsored by SEIU Local 221 that primarily supported Paloma Aguirre.</p>
+    <p class="mb-4">Vivian Moreno faced $58,422.06 in opposition spending, all from a committee sponsored by SEIU Local 221 that primarily supported Paloma Aguirre. John McCann received $31,812.19 in opposition spending, all from a single labor coalition sponsored by LIUNA Local 89.</p>
     
+    <p>It's notable that the opposition spending patterns mirror the support patterns, with labor organizations playing a key role in both supporting their preferred candidates and opposing others. The data shows that Paloma Aguirre was the most targeted candidate in terms of opposition spending, despite receiving substantial support from SEIU and other labor organizations.</p>
 </section>
 
 <!-- Channel Breakdown Section -->
@@ -1832,87 +1945,93 @@
             <tbody>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Mail</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Mailer, Mailers, Mailing, Direct Mail, Lit</td>
-                    <td class="py-2 px-4 border-b text-right">$1,247,529.20</td>
-                    <td class="py-2 px-4 border-b text-right">60.3%</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Mailer, Mailers, Mailing, Direct Mail, Lit, Two Mailers</td>
+                    <td class="py-2 px-4 border-b text-right">$1,595,573.42</td>
+                    <td class="py-2 px-4 border-b text-right">57.1%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Digital Ads</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Digital Ads, Digital Ad Program, Ads + Production</td>
-                    <td class="py-2 px-4 border-b text-right">$277,378.41</td>
-                    <td class="py-2 px-4 border-b text-right">13.4%</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Digital Ads, Digital Ad Program, Digital Ads and Production, Digital Letter</td>
+                    <td class="py-2 px-4 border-b text-right">$323,089.46</td>
+                    <td class="py-2 px-4 border-b text-right">11.6%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Field</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Canvassing, Door‑hangers, Field / Walk programs, Member‑to‑Member</td>
-                    <td class="py-2 px-4 border-b text-right">$174,826.59</td>
-                    <td class="py-2 px-4 border-b text-right">8.4%</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Canvass, Canvassing, Door Hangers, Doorhangers, Field Outreach, Field Program, Member to Member Canvassing, Printed Literature for Canvassing, Walk Program</td>
+                    <td class="py-2 px-4 border-b text-right">$278,283.88</td>
+                    <td class="py-2 px-4 border-b text-right">10.0%</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b font-medium">Phone / SMS</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Live phone calls, Phone Calls & Text Messages, Text Messages, Texting, Text Calls, Texts and Calls, Phonebanking</td>
+                    <td class="py-2 px-4 border-b text-right">$167,580.24</td>
+                    <td class="py-2 px-4 border-b text-right">6.0%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Mixed Media</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">One vendor package combining mail + online + SMS</td>
-                    <td class="py-2 px-4 border-b text-right">$97,256.65</td>
-                    <td class="py-2 px-4 border-b text-right">4.7%</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Mailers, Online Ads, Website, and Text Messages, Media, Direct mail including related polling</td>
+                    <td class="py-2 px-4 border-b text-right">$149,675.37</td>
+                    <td class="py-2 px-4 border-b text-right">5.4%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Consulting</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Pure consulting lines and "Consulting + Design + VF" bundle</td>
-                    <td class="py-2 px-4 border-b text-right">$72,069.80</td>
-                    <td class="py-2 px-4 border-b text-right">3.5%</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Consulting, Consulting, Graphic Design, and Voter File</td>
+                    <td class="py-2 px-4 border-b text-right">$74,069.80</td>
+                    <td class="py-2 px-4 border-b text-right">2.7%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Polling / Research</td>
                     <td class="py-2 px-4 border-b text-sm text-gray-600">Poll, Polling, Polling & Research, Research</td>
-                    <td class="py-2 px-4 border-b text-right">$67,400.00</td>
-                    <td class="py-2 px-4 border-b text-right">3.3%</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b font-medium">Phone / SMS</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Live phone calls, Phone Calls & Text Messages, Text Messages</td>
-                    <td class="py-2 px-4 border-b text-right">$61,693.39</td>
-                    <td class="py-2 px-4 border-b text-right">3.0%</td>
+                    <td class="py-2 px-4 border-b text-right">$70,400.00</td>
+                    <td class="py-2 px-4 border-b text-right">2.5%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Voter File / Data</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Voter‑file purchases & associated design / website work</td>
-                    <td class="py-2 px-4 border-b text-right">$29,824.25</td>
-                    <td class="py-2 px-4 border-b text-right">1.4%</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Voter File, Voter File & Design, Voter File and Design, Field Program Voter File, Data and live calls</td>
+                    <td class="py-2 px-4 border-b text-right">$50,210.42</td>
+                    <td class="py-2 px-4 border-b text-right">1.8%</td>
                 </tr>
                 <tr>
-                    <td class="py-2 px-4 border-b font-medium">Video</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Video Ad & Production</td>
-                    <td class="py-2 px-4 border-b text-right">$15,149.00</td>
-                    <td class="py-2 px-4 border-b text-right">0.7%</td>
+                    <td class="py-2 px-4 border-b font-medium">Design</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Graphic Design, Design, Mailer Design</td>
+                    <td class="py-2 px-4 border-b text-right">$13,857.40</td>
+                    <td class="py-2 px-4 border-b text-right">0.5%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Web</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Web, Website</td>
-                    <td class="py-2 px-4 border-b text-right">$13,374.16</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Web, Website, Voter File, Design, and Website</td>
+                    <td class="py-2 px-4 border-b text-right">$18,047.91</td>
                     <td class="py-2 px-4 border-b text-right">0.6%</td>
                 </tr>
                 <tr>
-                    <td class="py-2 px-4 border-b font-medium">Design‑only</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Graphic / Mailer design with no placement cost</td>
-                    <td class="py-2 px-4 border-b text-right">$11,845.80</td>
-                    <td class="py-2 px-4 border-b text-right">0.6%</td>
+                    <td class="py-2 px-4 border-b font-medium">Video</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Video Ad, Video Production</td>
+                    <td class="py-2 px-4 border-b text-right">$15,149.00</td>
+                    <td class="py-2 px-4 border-b text-right">0.5%</td>
                 </tr>
                 <tr>
                     <td class="py-2 px-4 border-b font-medium">Email</td>
-                    <td class="py-2 px-4 border-b text-sm text-gray-600">Voter‑Guide Emails</td>
-                    <td class="py-2 px-4 border-b text-right">$1,726.25</td>
+                    <td class="py-2 px-4 border-b text-sm text-gray-600">Voter Guide Emails, Emails</td>
+                    <td class="py-2 px-4 border-b text-right">$2,226.25</td>
                     <td class="py-2 px-4 border-b text-right">0.1%</td>
                 </tr>
                 <tr class="font-bold bg-gray-50">
                     <td class="py-2 px-4 border-b">Grand Total</td>
                     <td class="py-2 px-4 border-b text-center">—</td>
-                    <td class="py-2 px-4 border-b text-right">$2,070,073.50</td>
+                    <td class="py-2 px-4 border-b text-right">$2,794,419.49</td>
                     <td class="py-2 px-4 border-b text-right">100%</td>
                 </tr>
             </tbody>
         </table>
     </div>
     
+    <p class="text-sm text-gray-600 mt-4">
+        <strong>Note:</strong> Some expenditures may include bundled services across multiple channels. Items have been categorized based on their primary purpose where possible.
+    </p>
     
+    <p class="text-sm text-gray-600 mt-2">
+        Mail communications represent the majority of spending (57.1%), followed by digital advertising (11.6%) and field operations (10.0%). Phone and text messaging campaigns accounted for 6.0% of total expenditures, reflecting the increasingly diverse outreach strategies employed in modern campaigns.
+    </p>
 </section>
         </main>
 
